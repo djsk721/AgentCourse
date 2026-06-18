@@ -56,7 +56,7 @@ if user_input:
     with st.chat_message("assistant"):
         with st.spinner("응답 생성 중..."):
             response = client.chat.completions.create(
-                model=os.getenv('AZURE_OPENAI_DEPLOYMENT'),
+                model=os.getenv('AZURE_OPENAI_CHAT_MODEL'),
                 messages=st.session_state.messages,
             )
 

@@ -16,7 +16,7 @@ while True:
         
     content = input("시의 내용을 입력하세요: ")
     response = openai.chat.completions.create(
-        model = os.getenv("AZURE_OPENAI_DEPLOYMENT"),
+        model = os.getenv("AZURE_OPENAI_CHAT_MODEL"),
         temperature=0.9,
         messages = [
 
